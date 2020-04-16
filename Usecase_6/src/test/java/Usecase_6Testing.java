@@ -8,7 +8,7 @@ public class Usecase_6Testing {
     {
         Usecase_6 usecase = new Usecase_6();
         String string = "hello welcome";
-        Boolean result = usecase.rule2(string);
+        Boolean result = usecase.val(string);
         Assert.assertEquals(true,result);
     }
     @Test

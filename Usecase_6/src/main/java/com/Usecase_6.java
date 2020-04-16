@@ -1,8 +1,10 @@
 package com;
 
 public class Usecase_6 {
-    public Boolean rule2(String string)
+    public Boolean validating_LengthOfPassword(String string)
     {
-        return  string.length()>=8;
+        String strings = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*[@$!%*#?&]).{8,}";
+        Pattern pat = Pattern.compile(strings);
+        return pat.matcher(string).matches();
     }
 }
