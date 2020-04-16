@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Usecase_6Testing" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-14T09:52:40" hostname="DESKTOP-9J6MPIC" time="0.004">
+<testsuite name="Usecase_6Testing" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-16T09:49:30" hostname="DESKTOP-9J6MPIC" time="0.005">
   <properties/>
-  <testcase name="testcase_Rule2_Validation" classname="Usecase_6Testing" time="0.003"/>
-  <testcase name="testcase_Rule2_Validation2" classname="Usecase_6Testing" time="0.0"/>
-  <testcase name="testcase_Rule2_Invalidation1" classname="Usecase_6Testing" time="0.0"/>
-  <testcase name="testcase_Rule2_Invalidation2" classname="Usecase_6Testing" time="0.0"/>
+  <testcase name="givenPasswordLength_ReturnsFalse" classname="Usecase_6Testing" time="0.004"/>
+  <testcase name="givenPasswordLength_ReturnFalse" classname="Usecase_6Testing" time="0.0"/>
+  <testcase name="givenPasswordLength_ReturnsTrue" classname="Usecase_6Testing" time="0.0"/>
+  <testcase name="givenPasswordLength_ReturnTrue" classname="Usecase_6Testing" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

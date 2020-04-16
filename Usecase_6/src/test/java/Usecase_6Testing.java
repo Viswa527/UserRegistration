@@ -4,35 +4,35 @@ import org.junit.Test;
 
 public class Usecase_6Testing {
     @Test
-    public void testcase_Length_Validation_IsTrue()
+    public void givenPasswordLength_ReturnsTrue()
     {
         Usecase_6 usecase = new Usecase_6();
-        String string = "hello welcome";
-        Boolean result = usecase.val(string);
+        String string = "hellowelCome1";
+        boolean result = usecase.validating_LengthOfPassword(string);
         Assert.assertEquals(true,result);
     }
     @Test
-    public void testcase_Length_Validation2_IsTrue()
+    public void givenPasswordLength_ReturnTrue()
     {
         Usecase_6 usecase = new Usecase_6();
-        String string = "welcometojava  ";
-        Boolean result = usecase.rule2(string);
+        String string = "Welcometojava2";
+        boolean result = usecase.validating_LengthOfPassword(string);
         Assert.assertEquals(true,result);
     }
     @Test
-    public void testcase_Length_Validation3_IsTrue()
+    public void givenPasswordLength_ReturnFalse()
     {
         Usecase_6 usecase = new Usecase_6();
         String string = "welcome";
-        Boolean result = usecase.rule2(string);
+        boolean result = usecase.validating_LengthOfPassword(string);
         Assert.assertEquals(false,result);
     }
     @Test
-    public void testcase_Rule2_Validation4_IsTrue()
+    public void givenPasswordLength_ReturnsFalse()
     {
         Usecase_6 usecase = new Usecase_6();
         String string = "Hello";
-        Boolean result = usecase.rule2(string);
+        boolean result = usecase.validating_LengthOfPassword(string);
         Assert.assertEquals(false,result);
     }
 }

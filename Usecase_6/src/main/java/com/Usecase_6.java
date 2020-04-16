@@ -1,9 +1,11 @@
 package com;
 
+import java.util.regex.Pattern;
+
 public class Usecase_6 {
-    public Boolean validating_LengthOfPassword(String string)
+    public boolean validating_LengthOfPassword(String string)
     {
-        String strings = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*[@$!%*#?&]).{8,}";
+        String strings = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}";
         Pattern pat = Pattern.compile(strings);
         return pat.matcher(string).matches();
     }
