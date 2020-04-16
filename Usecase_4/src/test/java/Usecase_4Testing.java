@@ -15,7 +15,7 @@ public class Usecase_4Testing {
     public void givenNumber_Valid_ReturnTrue()
     {
         Usecase_4 usecase = new Usecase_4();
-        String number = "00 1111100000";
+        String number = "21 1111100000";
         Boolean result = usecase.validatingNumber(number);
         Assert.assertEquals(true,result);
     }

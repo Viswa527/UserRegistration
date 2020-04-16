@@ -1,16 +1,11 @@
 package com;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 public class Usecase_4 {
     public Boolean validatingNumber(String number)
     {
-        String firstTwoDigits= ""+number.charAt(0)+number.charAt(1);
-        if(number.substring(3).length()==10 && (""+number.charAt(2)).equals(" ")&& firstTwoDigits.matches("\\d\\d"))
-        {
-            return  true;
-        }
-        else
-        {
-            return false;
-        }
+        String phoneNumber = "^[1-9]{2} [1-9]{1}[\\d]{9}";
+        Pattern pat = Pattern.compile(phoneNumber);
+        return pat.matcher(number).matches();
     }
 }
