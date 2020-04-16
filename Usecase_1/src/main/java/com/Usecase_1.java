@@ -1,16 +1,12 @@
 package com;
 
+import java.util.regex.Pattern;
+
 public class Usecase_1 {
-    public String validatingFirstName(String firstName)
+    public boolean validatingFirstName(String firstName)
     {
-        int asciiValue = (int)(firstName.charAt(0));
-        if(asciiValue>=65 && asciiValue<=90 && firstName.length()>2)
-        {
-            return "Valid";
-        }
-        else
-        {
-            return "Invalid";
-        }
+        String lastname ="^[A-Z]{1}[a-z]{2,}$";
+        Pattern pat = Pattern.compile(lastname);
+        return pat.matcher(firstName).matches();
     }
 }

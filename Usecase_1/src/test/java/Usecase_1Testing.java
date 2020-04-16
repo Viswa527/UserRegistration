@@ -8,30 +8,30 @@ public class Usecase_1Testing {
     {
         String firstname = "Viswa";
         Usecase_1 usecase = new Usecase_1();
-        String result = usecase.validatingFirstName(firstname);
-        Assert.assertEquals("Valid",result);
+        boolean result = usecase.validatingFirstName(firstname);
+        Assert.assertEquals(true,result);
     }
     @Test
     public void givenFirstName_IntialLettersCapital_ReturnsTrue()
     {
         String firstname = "Spy";
         Usecase_1 usecase = new Usecase_1();
-        String result = usecase.validatingFirstName(firstname);
-        Assert.assertEquals("Valid",result);
+        boolean result = usecase.validatingFirstName(firstname);
+        Assert.assertEquals(true,result);
     }
     @Test
     public void givenFirstName_IntialLettersCapital_ReturnsFalse()
     {
         String firstname = "viswa";
         Usecase_1 usecase = new Usecase_1();
-        String result = usecase.validatingFirstName(firstname);
-        Assert.assertEquals("Invalid",result);
+        boolean result = usecase.validatingFirstName(firstname);
+        Assert.assertEquals(false,result);
     }
     @Test
     public void givenFirstName_IntialLetterCapital_ReturnsFalse() {
         String firstname = "1Viswa";
         Usecase_1 usecase = new Usecase_1();
-        String result = usecase.validatingFirstName(firstname);
-        Assert.assertEquals("Invalid", result);
+        boolean result = usecase.validatingFirstName(firstname);
+        Assert.assertEquals(false,result);
     }
 }
